@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Films</h1>
+    <ul>
+        {% for film in films %}
+            <li><a href="/films/show?id={{ film.id }}">{{ film.id }}. {{ film.title }}</a></li>
+        {% else %}
+            <li>Nothing to display</li>
+        {% endfor %}
+    </ul>
+    <a href="/films/add">Ajouter</a>
+{% endblock %}

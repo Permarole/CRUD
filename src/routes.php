@@ -13,4 +13,9 @@ return [
     'items/show' => ['ItemController', 'show', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
+    'films' => ['FilmController', 'index'],
+    'films/show' => ['FilmController', 'show', ['id']],
+    'films/add' => ['FilmController', 'add'],
+    'films/edit' => ['FilmController', 'edit', ['id']],
+    'films/delete' => ['FilmController', 'delete', ['id']],
 ];
